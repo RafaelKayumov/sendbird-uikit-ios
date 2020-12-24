@@ -54,7 +54,7 @@ open class SBUContentBaseMessageCell: SBUBaseMessageCell {
         return stateView
     }()
     
-    internal var mainContainerView: SBUSelectableStackView = {
+    public var mainContainerView: SBUSelectableStackView = {
         let mainView = SBUSelectableStackView()
         mainView.layer.cornerRadius = 16
         mainView.layer.borderColor = UIColor.clear.cgColor
@@ -63,7 +63,7 @@ open class SBUContentBaseMessageCell: SBUBaseMessageCell {
         return mainView
     }()
     
-    internal var reactionView: SBUMessageReactionView = {
+    public var reactionView: SBUMessageReactionView = {
         let reactionView = SBUMessageReactionView()
         return reactionView
     }()
